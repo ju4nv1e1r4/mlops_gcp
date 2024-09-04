@@ -12,7 +12,7 @@ WORKDIR /usr
 
 RUN pip install -r requirements.txt
 
-COPY ./deploy_gcp /usr/deploy_gcp
+COPY ./deploy /usr/deploy_gcp
 
 ENTRYPOINT [ "python3" ]
 
