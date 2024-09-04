@@ -12,8 +12,8 @@ WORKDIR /usr
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./main.py /usr/deploy
+COPY ./main.py /usr/main.py
 
 ENTRYPOINT [ "python3" ]
 
-CMD [ "deploy/main.py" ]
+CMD [ "main.py" ]
