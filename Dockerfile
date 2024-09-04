@@ -12,7 +12,7 @@ WORKDIR /usr
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./deploy/main.py /usr/deploy
+COPY ./main.py /usr/deploy
 
 ENTRYPOINT [ "python3" ]
 
