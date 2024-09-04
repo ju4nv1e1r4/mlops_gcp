@@ -12,8 +12,8 @@ WORKDIR /usr
 
 RUN pip install -r requirements.txt
 
-COPY ./mlops_gcp /usr/mlops_gcp
+COPY ./deploy_gcp /usr/deploy_gcp
 
 ENTRYPOINT [ "python3" ]
 
-CMD [ "mlops_gcp/main.py" ]
+CMD [ "deploy_gcp/main.py" ]
