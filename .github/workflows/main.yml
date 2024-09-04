@@ -44,6 +44,10 @@ jobs:
         project_id: ${{ secrets.RUN_PROJECT }}
 
     # Build and push image to Google Container Registry
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
     - name: Build
       run: |-
         gcloud builds submit \
