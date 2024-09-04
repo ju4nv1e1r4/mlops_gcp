@@ -42,3 +42,4 @@ Werkzeug==3.0.4
 cookiecutter==2.6.0
 cookiecutter-data-science==2.0.0
 flask_basicauth==0.2.0
+gunicorn==23.0.0
