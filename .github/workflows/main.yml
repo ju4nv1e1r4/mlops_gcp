@@ -33,10 +33,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     # Setup gcloud CLI
-    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+    - uses: google-github-actions/setup-gcloud@v2
       with:
         version: '2.319.1'
         service_account_key: ${{ secrets.RUN_SA_KEY }}
