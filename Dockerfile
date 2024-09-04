@@ -12,8 +12,8 @@ WORKDIR /usr
 
 RUN pip install -r requirements.txt
 
-COPY ./deploy /usr/deploy_gcp
+COPY ./deploy/main.py /usr/deploy_gcp
 
 ENTRYPOINT [ "python3" ]
 
-CMD [ "deploy_gcp/main.py" ]
+CMD [ "deploy/main.py" ]
